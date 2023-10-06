@@ -44,7 +44,7 @@ const Profile = () => {
     };
     if (session?.user.id) fetchPosts();
   }, []);
-  console.log(session);
+
   return (
     <MyProfile
       name="My"
