@@ -1,7 +1,6 @@
 "use client";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 
 import Form from "@components/Form";
 
@@ -37,10 +36,6 @@ const CreatePrompt = () => {
       setIsSubmitting(false);
     }
   };
-
-  if (!session) {
-    router.push("/");
-  }
 
   return (
     <Form
