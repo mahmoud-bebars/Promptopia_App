@@ -1,0 +1,13 @@
+import { dbConnect } from "@utils/database";
+import Prompt from "@models/prompt";
+
+export const GET = async (res) => {
+  try {
+    await dbConnect();
+    const prompts = await Prompt.find({}).populate("creator");
+
+    return new Response(JSON.stringify(prompts), { status: 200 });
+  } catch (error) {
+    return new Response("Faild to Fetch Propmts From DB", { status: 500 });
+  }
+};
