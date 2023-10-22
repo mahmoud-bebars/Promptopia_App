@@ -1,5 +1,7 @@
 # Promptopia App
 
+![repo screen (2)](https://github.com/mahmoud-bebars/Promptopia_App/assets/66588352/d4c40b1e-619c-42f8-988c-b8b2db58e879)
+
 ## Discover & Share AI Prompts
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
